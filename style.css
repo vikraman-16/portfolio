@@ -60,7 +60,7 @@ header ul li a {
 .banner {
   position: relative;
   min-height: 100vh;
-  background: url(https://github.com/JackCree/CSSexercices/blob/main/Responsive-web-design-landing-page-01/banner.jpg?raw=true);
+  background: url(https://github.com/vikraman-16/portfolio/blob/master/life-wallpaper-preview.jpg?raw=True);
   background-size: cover;
   background-position: right;
   display: flex;
@@ -413,5 +413,7 @@ img {
     padding: 100px 20px;
   }
 }
-
+.heading.white{
+  color: #000;
+}
 
