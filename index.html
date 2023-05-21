@@ -1,160 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="static/scripts/responses.js"></script>
+<script src="static/scripts/chat.js"></script>
+  <title>Portfolio</title>
 </head>
+
 <body>
   <header>
-<a href="#" class="logo">Portfolio</a>
-<div class="toggle" onclick="toggleMenu();"></div>
-<ul class="menu">
-<li><a href="#home" onclick="toggleMenu();">Home</a></li>
-<li><a href="#about" onclick="toggleMenu();">About</a></li>
-<li><a href="#services" onclick="toggleMenu();">Services</a></li>
-<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-</ul>
-</header>
-<section class="banner" id="home">
-<div class="text-banner">
-  <h2>Hello, I'm <br><span>Vikraman.P</span></h2>
-  <h3>I'm learning Front End Web Design.</h3>
-  <a href="#about" class="btn">About Me</a>
-</div>
-</section>
-<section class="about" id="about">
-<div class="heading">
-  <h2>About Me</h2>
-</div>
-<div class="content">
-  <div class="contentbox">
-    <h3>I am currently pursuing B.E Degree</h3>
-    
-      <br><br>I have high knowledge in Html,CSS , Javascript and know some basics in Angular and react. I am a quick and passionate learner
-  </div>
-  <div class="w50">
-    <img src="https://github.com/JackCree/CSSexercices/blob/main/Responsive-web-design-landing-page-01/foots.jpg?raw=true" class="img"> 
-  </div>
-</div>
-</section>
-<section class="services" id="services">
-<div class="heading white">
-  <h2>Services</h2>
-  <p>In one sentence, create simple HTML/CSS landing page</p>
-</div>
-<div class="content">
-  <div class="servicesbox">
-    <div class="icon"><i class="fas fa-laptop-code"></i></div>
-    <h2>HTML</h2>
-    <p>HTML stands for Hyper Text Markup Language
-      HTML is the standard markup language for creating Web pages
-      HTML describes the structure of a Web page
-      HTML consists of a series of elements
-      HTML elements tell the browser how to display the content</p>
-  </div> 
-  <div class="servicesbox">
-    <div class="icon"><i class="fas fa-file-code"></i></div>
-    <h2>CSS</h2>
-    <p>CSS stands for Cascading Style Sheets
-      CSS describes how HTML elements are to be displayed on screen, paper, or in other media
-      CSS saves a lot of work. It can control the layout of multiple web pages all at once
-      External stylesheets are stored in CSS files</p>
-  </div> 
-  <div class="servicesbox">
-    <div class="icon"><i class="fas fa-database"></i></div>
-    <h2>Javascript</h2>
-    <p>JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities.</p>
-  </div> 
-  <div class="servicesbox">
-    <div class="icon"><i class="fas fa-edit"></i></div>
-    <h2>Angular</h2>
-    <p>Angular is a development platform, built on TypeScript. As a platform, Angular includes:
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="menu">
+      <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu();">About</a></li>
+      <li><a href="#services" onclick="toggleMenu();">Projects</a></li>
+      <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+    </ul>
+  </header>
+  <section class="banner" id="home">
+    <div class="text-banner">
+      <h2>Hello, I'm <br><span>Vikraman.P</span></h2>
+      <h3>I'm learning Front End Web Design.</h3>    
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="heading">
+      <h2>About Me</h2>
+    </div>
+    <div class="content">
+      <div class="contentbox">
+        <h3>I am currently pursuing B.E Degree</h3>
 
-      A component-based framework for building scalable web applications
-      A collection of well-integrated libraries that cover a wide variety of features, including routing, forms management, client-server communication, and more
-      A suite of developer tools to help you develop, build, test, and update your code</p>
-  </div> 
-  <div class="servicesbox">
-    <div class="icon"><i class="fas fa-photo-video"></i></div>
-    <h2>Video Editing</h2>
-    <p>A Video Editor is tasked with taking the raw footage shot by a film crew and director and turning it into the final product. This means following an outline, script or shot list and assembling the footage into one cohesive video or film. Often in video and film work, there are many camera angles and takes recorded. </p>
-  </div> 
-</div>
-</div>
-</section>
-<section class="work" id="work">
-<div class="heading white">
-  <h2>My latest work</h2>
-  <p>Here are some works done with HTML/CSS languages</p>
-</div>
-<div class="content">
-  <div class="workbox">
-    <a href="https://codepen.io/vikramanp/pen/jOeZqRM" target="_blank"><img src="Passgenerator.jpg" height="400px" width="500px"></a>
-  </div>
-  <div class="workbox">
-    <a href="https://codepen.io/vikramanp/pen/oNaExRQ" target="_blank"><img src="rockpaperscissors.jpg" alt="project" height="400px
-      " width="500px"></a>
-  </div>
-</div>
-<div class="heading">
-  <a href="#" class="btn">View more</a>
-</div>
-</section>
-
-<section class="contact" id="contact">
-<div class="heading white">
-  <h2>Contact Me</h2>
-  <p>Some questions about work. Here you are.</p>
-</div>
-<div class="content">
-  <div class="contactinfo">
-    <h3>Contact Informations</h3>
-    <div class="contactinfobox">
-
-      <div class="box">
-        <div class="icon"><i class="fas fa-phone"></i></div>
-        <div class="text">
-          <h3>Phone</h3>
-          <p>(+91)9874653210</p>
-        </div>
+        <br><br>I have high knowledge in Html,CSS , Javascript and know some basics in Angular and react. I am a quick
+        and passionate learner
       </div>
-      <div class="box">
-        <div class="icon"><i class="fas fa-envelope"></i></div>
-        <div class="text">
-          <h3>Mail</h3>              <p>vikramanp.cse2022@citchennai.net</p>
-        </div>
+      <div class="w50">
+        <img
+          src="https://github.com/JackCree/CSSexercices/blob/main/Responsive-web-design-landing-page-01/foots.jpg?raw=true"
+          class="img">
       </div>
     </div>
-  </div>
-  <div class="formbox">
-  <form>
-    <h3>Message Me</h3>
-    <input type="text" name="" placeholder="Full Name">
-    <input type="email" name="" placeholder="Your email">
-    <textarea placeholder="Your message"></textarea>
-    <input type="submit" value="Send">
-  </form>
-</div>
-</div>
-</section>
-<div class="copyright">
-Copyright 2023 © All Rights Reserved
-</div>
-<script type="text/javascript">  window.addEventListener('scroll', function(){
-var header= document.querySelector('header');
-header.classList.toggle('sticky', window.scrollY > 0);    
-});
+  </section>
+  <section class="services" id="services">
+    <div class="heading white">
+      <h2>Services</h2>
+      <p>In one sentence, create simple HTML/CSS landing page</p>
+    </div>
+    <div class="content">
+      <div class="servicesbox">
+        <div class="icon"><i class="fas fa-laptop-code"></i></div>
+        <h2>HTML</h2>
+        <p>HTML stands for Hyper Text Markup Language
+          HTML is the standard markup language for creating Web pages
+          HTML describes the structure of a Web page
+          HTML consists of a series of elements
+          HTML elements tell the browser how to display the content</p>
+      </div>
+      <div class="servicesbox">
+        <div class="icon"><i class="fas fa-file-code"></i></div>
+        <h2>CSS</h2>
+        <p>CSS stands for Cascading Style Sheets
+          CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+          CSS saves a lot of work. It can control the layout of multiple web pages all at once
+          External stylesheets are stored in CSS files</p>
+      </div>
+      <div class="servicesbox">
+        <div class="icon"><i class="fas fa-database"></i></div>
+        <h2>Javascript</h2>
+        <p>JavaScript is a dynamic computer programming language. It is lightweight and most commonly used as a part of
+          web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It
+          is an interpreted programming language with object-oriented capabilities.</p>
+      </div>
+      <div class="servicesbox">
+        <div class="icon"><i class="fas fa-edit"></i></div>
+        <h2>Angular</h2>
+        <p>Angular is a development platform, built on TypeScript. As a platform, Angular includes:
 
-function toggleMenu(){
-  var menutoggle = document.querySelector('.toggle');
-  var menu = document.querySelector('.menu');
-  menutoggle.classList.toggle('active');
-  menu.classList.toggle('active') 
-}
-</script>
+          A component-based framework for building scalable web applications
+          A collection of well-integrated libraries that cover a wide variety of features, including routing, forms
+          management, client-server communication, and more
+          A suite of developer tools to help you develop, build, test, and update your code</p>
+      </div>
+      <div class="servicesbox">
+        <div class="icon"><i class="fas fa-photo-video"></i></div>
+        <h2>Video Editing</h2>
+        <p>A Video Editor is tasked with taking the raw footage shot by a film crew and director and turning it into the
+          final product. This means following an outline, script or shot list and assembling the footage into one
+          cohesive video or film. Often in video and film work, there are many camera angles and takes recorded. </p>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="work" id="work">
+    <div class="heading white">
+      <h2>My latest work</h2>
+      <p>Here are some works done with HTML/CSS languages</p>
+    </div>
+    <div class="content">
+      <div class="workbox">
+        <a href="https://codepen.io/vikramanp/pen/jOeZqRM" target="_blank"><img src="Passgenerator.jpg" height="400px"
+            width="500px"></a>
+      </div>
+      <div class="workbox">
+        <a href="https://codepen.io/vikramanp/pen/oNaExRQ" target="_blank"><img src="rockpaperscissors.jpg"
+            alt="project" height="400px
+      " width="500px"></a>
+      </div>
+    </div>
+    <div class="heading">
+      <a href="#" class="btn">View more</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="heading white">
+      <h2>Contact Me</h2>
+      <p>Some questions about work. Here you are.</p>
+    </div>
+    <div class="content">
+      <div class="contactinfo">
+        <h3>Contact Informations</h3>
+        <div class="contactinfobox">
+
+          <div class="box">
+            <div class="icon"><i class="fas fa-phone"></i></div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>(+91)9874653210</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <div class="text">
+              <h3>Mail</h3>
+              <p>vikramanp.cse2022@citchennai.net</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="formbox">
+        <form>
+          <h3>Message Me</h3>
+          <input type="text" name="" placeholder="Full Name">
+          <input type="email" name="" placeholder="Your email">
+          <textarea placeholder="Your message"></textarea>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+    </div>
+  </section>
+  <div class="copyright">
+    Copyright 2023 © All Rights Reserved
+  </div>
+  <script type="text/javascript">  window.addEventListener('scroll', function () {
+      var header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    function toggleMenu() {
+      var menutoggle = document.querySelector('.toggle');
+      var menu = document.querySelector('.menu');
+      menutoggle.classList.toggle('active');
+      menu.classList.toggle('active')
+    }
+  </script>
 </body>
+
 </html>
